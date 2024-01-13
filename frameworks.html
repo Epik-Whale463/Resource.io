@@ -1,0 +1,228 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Languages</title>
+    <style>
+        body{
+            background-color: rgb(245, 184, 196);
+        }
+
+        hr{
+            border-color: black;
+            margin-right: 10px;
+        }
+
+        .hamburger {
+            display: inline-flex;
+            position: relative;
+            flex-direction: column;
+            cursor: pointer;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+        }
+
+        .hamburger-line {
+            width: 34px;
+            height: 5px;
+            background-color: #26b226;
+            margin: 3px 0;
+            transition: 0.6s;
+            border-radius: 20px;
+        }
+
+        #back2home-btn {
+            display: inline-block;
+            background-color: rgb(32, 32, 32);
+            color: white;
+            height: 2rem;
+            border-radius: 30px;
+            font-weight: bold;
+            box-shadow: 3px 3px rgb(201, 236, 60);
+            position: relative;
+            left: 17rem;
+            top: 20px;
+        }
+
+        #back2home-btn:active {
+            box-shadow: 0px 0px rgb(201, 236, 60);
+        }
+        h1{
+            font-size: 1.1rem;
+        }
+        #head {
+            font-family: Helvetica;
+            font-size: 2.4rem;
+            margin-left: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        #ul-element {
+            font-size: 1.7rem;
+        }
+
+        #ul-element .li-element p {
+            font-size: 0.9rem;
+        }
+
+        .inner-ul {
+            font-size: 0.9rem;
+        }
+
+        iframe {
+            margin-top: 30px;
+            border-radius: 15px;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            margin-top: 10px;
+            width: 97%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            border-radius: 40px;
+        }
+
+        .overlay-content {
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            font-size: 2rem;
+        }
+
+        .over-btn {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+    </div>
+
+    <button id="back2home-btn" onclick="window.location.href=('index.html')">Back to Home</button>
+
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <div class="over-btn languages" onclick="window.location.href='langs.html'">Languages section</div>
+            <div class="over-btn" onclick="window.location.href='frameworks.html'">Frameworks section</div>
+            <div class="over-btn" onclick="window.location.href='packages.html'">Packages section</div>
+
+        </div>
+    </div>
+        <br><br><br>
+    <h1 id="head">Explore Programming <i>Frameworks</i></h1><br>
+
+    
+
+FRAMEWORKS SECTION - 
+<br>
+    <hr>
+
+    <ul id="ul-element">
+        <li class="li-element">
+            Tailwind CSS
+            <p>Tailwind CSS is a utility-first CSS framework that allows developers to build modern and highly customizable user
+                interfaces. It provides a set of low-level utility classes, giving developers complete control over the styling of
+                their designs.</p>
+            <h1>Features of Tailwind CSS:</h1>
+            <ul class="inner-ul">
+                <li>Utility-First: Tailwind CSS follows a utility-first approach, providing a vast set of utility classes for styling directly in the markup.</li>
+                <li>Highly Customizable: Developers can customize every aspect of the design by configuring the utility classes.</li>
+                <li>Responsive Design: Tailwind makes it easy to create responsive designs using its responsive utility classes.</li>
+                <li>Plugins: Tailwind supports plugins, allowing developers to extend its functionality or use community-contributed plugins.</li>
+                <li>Build Size: Tailwind generates optimized and minimal CSS, reducing the overall size of the stylesheet.</li>
+            </ul>
+            <iframe width="360" height="275" src="https://www.youtube.com/embed/mr15Xzb1Ook?si=-zafPbww-Z60LSyy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </li>
+    
+        <br><hr>
+    
+        <li class="li-element">
+            Django
+            <p>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.
+                It follows the Model-View-Controller (MVC) architectural pattern and includes built-in features for handling
+                tasks like database management, authentication, and URL routing.</p>
+            <h1>Features of Django:</h1>
+            <ul class="inner-ul">
+                <li>ORM (Object-Relational Mapping): Django provides a powerful and flexible ORM for interacting with databases using Python objects.</li>
+                <li>Admin Interface: It includes a built-in admin interface for managing database records easily.</li>
+                <li>Security: Django includes security features such as protection against SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF).</li>
+                <li>Scalability: Django supports scalability and can handle high traffic websites.</li>
+                <li>Reusable Components: Django encourages the creation of reusable components, known as apps, for modular development.</li>
+            </ul>
+            <iframe width="360" height="275" src="https://www.youtube.com/embed/F5mRW0jo-U4?si=..."
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </li>
+    
+        <br><hr>
+
+    <li class="li-element">
+        React.js
+        <p>React.js is a JavaScript library for building user interfaces, developed by Facebook. It allows developers to create
+            reusable UI components, making it efficient for building interactive and dynamic web applications.</p>
+        <h1>Key Features of React.js:</h1>
+        <ul class="inner-ul">
+            <li>Component-Based: React follows a component-based architecture, allowing developers to create modular and reusable UI elements.</li>
+            <li>Virtual DOM: React uses a virtual DOM to improve performance by minimizing direct manipulation of the actual DOM.</li>
+            <li>Declarative Syntax: React uses a declarative syntax for defining UI components, making it easier to understand and debug code.</li>
+            <li>React Router: It provides routing capabilities for building single-page applications with multiple views.</li>
+        </ul>
+        <iframe width="360" height="275" src="https://www.youtube.com/embed/Tn6-PIqc4UM?si=zwGVXUVATns_0S-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </li>
+
+    <br><hr>
+
+    <li class="li-element">
+        Laravel
+        <p>Laravel is a PHP web application framework known for its elegant syntax and developer-friendly features. It simplifies
+            common tasks like routing, caching, and authentication, allowing developers to focus on building robust applications.</p>
+        <h1>Key Features of Laravel:</h1>
+        <ul class="inner-ul">
+            <li>Eloquent ORM: Laravel includes an Eloquent ORM for interacting with databases using an expressive syntax.</li>
+            <li>Blade Templating: Laravel's Blade templating engine provides a clean and efficient way to create views.</li>
+            <li>Artisan Console: The Artisan command-line tool simplifies common tasks and allows for the creation of custom commands.</li>
+            <li>Laravel Mix: It provides a simple and efficient way to compile assets, manage dependencies, and optimize front-end resources.</li>
+        </ul>
+        <iframe width="360" height="275" src="https://www.youtube.com/embed/rIfdg_Ot-LI?si=XnuiMinAM7lEgwXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </li>
+
+    <!-- Add more frameworks as needed -->
+    
+    </ul>
+    
+
+
+    <script>
+        function toggleMenu() {
+            var overlay = document.getElementById("overlay");
+            var todelete = document.getElementById("back2home");
+            if (overlay.style.display === "flex") {
+                overlay.style.opacity = 0;
+                setTimeout(function () {
+                    overlay.style.display = "none";
+                    todelete.style.display = "grid";
+                }, 400);
+            } else {
+                overlay.style.display = "flex";
+                setTimeout(function () {
+                    overlay.style.opacity = 1;
+                    todelete.style.display = "none";
+                }, 10);
+            }
+        }
+    </script>
+</body>
+</html>

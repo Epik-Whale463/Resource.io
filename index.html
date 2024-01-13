@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile webPage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <div class="hamburger" onclick="toggleMenu()">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        
+    </div>
+  
+
+        <p id="register-line" onclick="window.location.href=('login.html')">Register</p>
+
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <div class="over-btn languages" onclick="window.location.href='langs.html'">Languages</div>
+            <div class="over-btn" onclick="window.location.href='tech.html'">Technologies</div>
+            <div class="over-btn" onclick="window.location.href='https://www.youtube.com'">News</div>
+            <div class="over-btn" onclick="window.location.href='contact.html'">Contact</div>
+
+        </div>
+    </div>
+
+    <h1 id="heading-text">Resource.io</h1>
+    <hr>
+    <h1 id="question">What is Resource.io?</h1>
+    <br>
+    <p>Welcome to the world of technology and programming!<br><br> Just learning many languages won't take you anywhere. But don't worry, we've got you covered!<br><br>
+        
+        Hey my friend, there are many paths to choose in the field of Computer Science
+        Explore and find the  best one for yourself, the one that suits you
+        the most, the one that excites you the most.
+    </p>
+    
+
+    <p>" <b>CONSTANT</b> learning is the <b>KEY</b> "</p>
+    <br>
+    <p><b>FIND</b> OUT YOUR <b>PATH</b> !</p>
+    <br>
+
+    <button id="explore-btn" onclick="scrollDown()">
+        FIND
+    </button>
+    <br>
+    <br>
+    <br><br><br><br>
+    <div class="fade-in-section">
+        <p id="begin-where" style="font-family: 'Times New Roman';">
+            <br>" WHERE TO BEGIN ? "
+            <br><br>
+
+        </p>
+        <br>
+        
+
+        <div class="grid-container">
+            <div class="grid-item">
+               <b> Resource 1</b>
+                <hr>
+                <p style="letter-spacing:3px; font-weight:bolder; font-size:1.5rem;">Fireship</p>
+                <p class="res-desc">Fireship is a youtube channel,
+                     where you can find about the latest technologies that
+                     are available in the market and also brief understanding of the 
+                     different programming languages and frameworks
+                     <br><br><br>
+                     <b>Link to the resource</b>
+                     <br><br>
+                     
+                     <img src="fireship-logo.jpg" id="fire-logo" onclick="window.location.href=('https://www.youtube.com/@Fireship')">
+                </p>
+            </div>
+            <div class="grid-item">
+                <b> Resource 2</b>
+                <hr>
+                <p style="letter-spacing:3px; font-weight:bolder; font-size:1.5rem;">Freecodecamp</p>
+                <p class="res-desc">
+                    Another amazing <b>FREE</b>, but effective resource out there is Freecodecamp.
+                    Freecodecamp covers from <b>A</b> to <b>Z</b>.
+                    Web Development | Machine learning | Programming Languages |
+                     Data Science and many more ! 
+                     <br><br><br>
+                     
+                     <b>Link to the youtube resource</b>
+                     <br><br>
+                     <img src="freecodecamp-logo.png" id="fire-logo" onclick="window.location.href=('https://www.youtube.com/@freecodecamp')">
+
+                     
+                </p>
+            </div>
+            <div class="grid-item">
+                <b> Resource 3</b>
+                <hr>
+                <p style="letter-spacing:3px; font-weight:bolder; font-size:1.5rem;">CodeChef</p>
+
+                <p class="res-desc">
+                    Remember, watching and listening courses and tutorials will only take us soo far!
+                    <b>"Practice"</b>. <br>
+                    Say, you've learnt <b>X</b> then, you should be doing 
+                    <b>2X</b> the amount you've spent on <b>LEARNING</b> the concept
+                     <br><br><br>
+                     
+                     <b>Link to the resource</b>
+                     <br><br>
+                     <img src="codechef-logo.png" id="fire-logo" onclick="window.location.href=('https://www.codechef.com/')">
+            </div>
+          </div>
+          
+      </div>
+    
+</body>
+</html>

@@ -1,0 +1,294 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Languages</title>
+    <style>
+        body{
+            background-color: rgb(154, 233, 242);
+        }
+
+        hr{
+            border-color: black;
+            margin-right: 10px;
+        }
+
+        .hamburger {
+            display: inline-flex;
+            position: relative;
+            flex-direction: column;
+            cursor: pointer;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+        }
+
+        .hamburger-line {
+            width: 34px;
+            height: 5px;
+            background-color: #26b226;
+            margin: 3px 0;
+            transition: 0.6s;
+            border-radius: 20px;
+        }
+
+        #back2home-btn {
+            display: inline-block;
+            background-color: rgb(32, 32, 32);
+            color: white;
+            height: 2rem;
+            border-radius: 30px;
+            font-weight: bold;
+            box-shadow: 3px 3px rgb(201, 236, 60);
+            position: relative;
+            left: 17rem;
+            top: 20px;
+        }
+
+        #back2home-btn:active {
+            box-shadow: 0px 0px rgb(201, 236, 60);
+        }
+        h1{
+            font-size: 1.1rem;
+        }
+        #head {
+            font-family: Helvetica;
+            font-size: 2.4rem;
+            margin-left: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        #ul-element {
+            font-size: 1.7rem;
+        }
+
+        #ul-element .li-element p {
+            font-size: 0.9rem;
+        }
+
+        .inner-ul {
+            font-size: 0.9rem;
+        }
+
+        iframe {
+            margin-top: 30px;
+            border-radius: 15px;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            margin-top: 10px;
+            width: 97%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            border-radius: 40px;
+        }
+
+        .overlay-content {
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            font-size: 2rem;
+        }
+
+        .over-btn {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+    </div>
+
+    <button id="back2home-btn" onclick="window.location.href=('index.html')">Back to Home</button>
+
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <div class="over-btn languages" onclick="window.location.href='langs.html'">Languages section</div>
+            <div class="over-btn" onclick="window.location.href='frameworks.html'">Frameworks section</div>
+            <div class="over-btn" onclick="window.location.href='https://www.youtube.com'">Packages section</div>
+
+        </div>
+    </div>
+        <br><br><br>
+    <h1 id="head">Explore Programming <i>Languages</i></h1><br>
+
+    
+
+LANGUAGES SECTION -
+<br>
+    <hr>
+
+    <ul id="ul-element">
+        <li class="li-element">
+            Python
+            <p>Python is arguably one of the most powerful scripting languages. It is widely used for various purposes,
+                including:</p>
+            <ul class="inner-ul">
+                <li><b>Machine Learning</b>: Python is a popular choice for developing machine learning models and applications.</li><br>
+                <li><b>Data Science</b>: Python is extensively used in data analysis, visualization, and manipulation.</li><br>
+                <li><b>Web Development</b>: Python is employed in web development frameworks like Django and Flask, making it
+                    versatile for creating dynamic websites and web applications.</li><br>
+                <li><b>Automation</b>: Python is a preferred language for automating repetitive tasks, thanks to its simplicity and
+                    readability.</li><br>
+                <li><b>Scripting</b>: Python is widely used as a scripting language for various purposes, including system
+                    administration and automation of tasks.</li><br>
+                <li><b>Artificial Intelligence</b>: Python plays a crucial role in AI applications, with libraries like TensorFlow
+                    and PyTorch supporting neural network development.</li><br>
+                <li><b>Game Development</b>: Python is utilized in creating games, and its simplicity makes it a good choice for
+                    prototyping and development.</li><br>
+            </ul>
+            <iframe width="360" height="275" src="https://www.youtube.com/embed/x7X9w_GIm1s?si=S_yYrv6JtHuzHFYF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen >
+            </iframe>
+        </li>
+
+        <br><hr>
+
+        <li class="li-element">
+            JavaScript:
+            <p>JavaScript is a versatile scripting language primarily used for front-end web development. It enables
+                interactive and dynamic user interfaces. JavaScript is a fundamental technology for creating
+                client-side functionality on websites, and it plays a crucial role in the modern web ecosystem.</p>
+            <h1>Uses of JavaScript include:</h1>
+            <ul class="inner-ul">
+                <li>Enhancing User Interfaces: JavaScript is essential for creating dynamic and responsive user
+                    interfaces, allowing developers to build interactive web applications that respond to user
+                    actions.</li>
+                <li>Web Development: It is a core technology for building interactive and feature-rich websites.</li>
+                <li>Asynchronous Programming: JavaScript supports asynchronous operations, enabling the development of
+                    non-blocking code for efficient handling of tasks like data fetching and user interactions.</li>
+                <li>Browser Automation: JavaScript can be used for automating tasks in web browsers, enhancing user
+                    experience and efficiency.</li>
+            </ul>
+            <h1>Types of JavaScript:</h1>
+            <ul class="inner-ul">
+                <li><strong>Vanilla JavaScript:</strong> Refers to the pure, unmodified JavaScript without any
+                    frameworks or libraries.</li><br>
+                <li><strong>Node.js:</strong> JavaScript runtime that allows developers to execute JavaScript code
+                    server-side.</li><br>
+                <li><strong>React:</strong> A JavaScript library for building user interfaces, developed by Facebook.</li>
+                <li><strong>Angular:</strong> A JavaScript framework for building dynamic web applications, developed
+                    and maintained by Google.</li><br>
+                <li><strong>Vue.js:</strong> A progressive JavaScript framework for building user interfaces.</li><br>
+            
+                <li><strong>Express.js:</strong> Express is a web application framework for Node.js, designed for building robust and scalable web
+                    applications. It simplifies the process of creating APIs and handling various HTTP requests and
+                    responses. Express.js is known for its minimalist and flexible approach, making it a popular choice
+                    for developers working with Node.js.</li>
+
+            </ul>
+            <iframe width="360" height="275" src="https://www.youtube.com/embed/DHjqpvDnNGE?si=rsBaU5HjQNKt591I"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </li>
+
+        <br><hr>
+
+        <li class="li-element">
+            Java
+            <p>Java is a widely-used, object-oriented programming language known for its portability and versatility.
+                It is commonly used in enterprise applications and mobile development.</p>
+            <h1>Uses of Java include:</h1>
+            <ul class="inner-ul">
+                <li>Enterprise Applications: Java is widely used in the development of large-scale enterprise applications due to its robustness and scalability.</li>
+                <li>Mobile Development: Java is a key language for Android app development, making it one of the most popular choices for mobile applications.</li>
+                <li>Web Development: Java is used for server-side programming and building dynamic web applications.</li>
+                <li>Desktop Applications: Java is employed in creating cross-platform desktop applications using frameworks like JavaFX.</li>
+                <li>Game Development: Java is utilized in game development, and it's the primary language for developing applications on the Minecraft platform.</li>
+                <li>Cloud Computing: Java is used in various cloud computing platforms and services.</li>
+            </ul>
+            <iframe width="360" height="275" src="https://www.youtube.com/embed/l9AzO1FMgM8?si=uBpFOR4-0pWU41Cf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </li>
+
+        <br><hr>
+
+        <li class="li-element">
+            C#
+            <p>C# is a programming language developed by Microsoft and is a key language for building Windows
+                applications, web services, and game development using Unity.</p>
+                <iframe width="360" height="275" src="https://www.youtube.com/embed/ravLFzIguCM?si=AE8Do63Y6fjAaTjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </li>
+
+        <br><hr>
+
+        <li class="li-element">
+            C++
+            <p>C++ is an extension of the C programming language and is widely used in systems/software development,
+                game development, and high-performance applications.</p>
+                <iframe width="360" height="275" src="https://www.youtube.com/embed/MNeX4EGtR5Y?si=C0zZF6LRCpW3dGid" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </li>
+
+        <br><hr>
+
+        <li class="li-element">
+            PHP
+            <p>PHP is a server-side scripting language commonly used for web development. It is embedded in HTML and
+                suitable for creating dynamic web pages.</p>
+                <iframe width="360" height="275" src="https://www.youtube.com/embed/a7_WFUlFS94?si=kfqBdx2JY50ypHRy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </li>
+
+        <br><hr>
+
+        <li class="li-element">
+            Ruby
+            <p>Ruby is a dynamic, object-oriented programming language known for its simplicity and productivity. It is
+                commonly used in web development, especially with the Ruby on Rails framework.</p>
+                <iframe width="360" height="275" src="https://www.youtube.com/embed/UYm0kfnRTJk?si=5Chrx5u1UnAWoA4b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </li>
+
+        <br><hr>
+
+        <li class="li-element">
+            Swift
+            <p>Swift is a programming language developed by Apple for iOS, macOS, watchOS, and tvOS app development. It
+                is known for its speed and safety features.</p>
+                <iframe width="360" height="275" src="https://www.youtube.com/embed/nAchMctX4YA?si=4ta2wlUAg7EmZWgj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </li>
+
+        <br><hr>
+
+        <li class="li-element">
+            Kotlin
+            <p>Kotlin is a modern programming language that is fully interoperable with Java. It is often used for
+                Android app development and offers concise syntax and enhanced safety features.</p>
+                <iframe width="360" height="275" src="https://www.youtube.com/embed/xT8oP0wy-A0?si=1DKQnfw-J0hrt4Np" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </li>
+
+        <br>
+
+    </ul>
+    
+
+
+    <script>
+        function toggleMenu() {
+            var overlay = document.getElementById("overlay");
+            var todelete = document.getElementById("back2home");
+            if (overlay.style.display === "flex") {
+                overlay.style.opacity = 0;
+                setTimeout(function () {
+                    overlay.style.display = "none";
+                    todelete.style.display = "grid";
+                }, 400);
+            } else {
+                overlay.style.display = "flex";
+                setTimeout(function () {
+                    overlay.style.opacity = 1;
+                    todelete.style.display = "none";
+                }, 10);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        body{
+            display: flex;
+            background-color: rgb(77, 76, 76);
+            justify-content: center;
+            align-items: center;
+        }
+        .register-div{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(39, 39, 39);
+            height: 40rem;
+            width: 25rem;
+            border-radius: 30px;
+            align-items: center;
+            opacity: 0.77;
+        }
+
+        #heading{
+            margin-top: 10vh;
+            color: white;
+        }
+
+        .register-div {
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            color: white;
+          }
+          
+          h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+          }
+          
+          form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            gap: 10px;
+          }
+          
+          .form-input {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+          }
+          
+          .form-input i {
+            margin-right: 1rem;
+          }
+          
+          input[type="text"],
+          input[type="password"] {
+            border: none;
+            border-bottom: 1px solid #000;
+            outline: none;
+            height: 40px;
+            width: 20rem;
+            border-radius: 100px;
+            text-align: center;
+            letter-spacing: 3px;
+
+          }
+          
+          
+          button[type="submit"] {
+            background-color: #565757;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 10px;
+            margin-top: 1rem;
+            cursor: pointer;
+            width: 7rem;
+          }
+          
+          button[type="submit"]:hover {
+            background-color: #106ebf;
+          }
+        
+          
+    </style>
+
+   
+</head>
+<body>
+      
+
+    <div class="register-div">
+
+        <h1>SIGN IN</h1>
+    <form>
+
+      <div class="form-input">
+        <input type="text" placeholder="Username" required>
+        <i class="fa fa-user"></i>
+      </div>
+      <div class="form-input">
+        <input type="password" placeholder="Password" required>
+        <i class="fa fa-lock"></i>
+      </div>
+      <button type="submit">SIGN IN</button>
+
+    </form>
+
+    <p >Don't have an account? <a href="register.html" style="color: rgb(18, 224, 18);">Register Here</a></p>
+
+    <button style="background-color:rgb(255, 255, 255);
+      height:2rem; border-radius:30px; 
+    " onclick="window.location.href=('index.html')">Return to Home</button>
+
+    </div>
+</body>
+</html>
